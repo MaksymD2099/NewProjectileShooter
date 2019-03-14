@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.RadioButton?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" fx:id="pane" onMouseClicked="#mouseClicked" onMouseMoved="#mouseMoved" prefHeight="800.0" prefWidth="1500.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="projectileshooter.FXMLDocumentController">
+   <children>
+      <ImageView fx:id="character" fitHeight="101.0" fitWidth="105.0" layoutX="27.0" layoutY="699.0" pickOnBounds="true" preserveRatio="true" />
+      <Label fx:id="coordinates" layoutX="360.0" layoutY="131.0" prefHeight="48.0" prefWidth="578.0" text="--">
+         <font>
+            <Font size="22.0" />
+         </font>
+      </Label>
+      <ImageView fx:id="gunImage" depthTest="DISABLE" fitHeight="39.0" fitWidth="122.0" layoutX="26.0" layoutY="750.0" nodeOrientation="INHERIT" onMouseMoved="#mouseMoved" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../assets/Guns/gunFire.gif" />
+         </image></ImageView>
+      <RadioButton fx:id="radioButtonIceGun" layoutX="66.0" layoutY="43.0" mnemonicParsing="false" />
+      <ImageView fitHeight="27.0" fitWidth="85.0" layoutX="14.0" layoutY="64.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="file:/M:/Program%20Files%20(x86)/Programming%20Apps/ProjectileShooterGeorge_sVersion/assets/Guns/gunIce.gif" />
+         </image>
+      </ImageView>
+      <RadioButton fx:id="radioButtonFireGun" layoutX="125.0" layoutY="43.0" mnemonicParsing="false" />
+      <ImageView fitHeight="27.0" fitWidth="85.0" layoutX="74.0" layoutY="64.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="file:/M:/Program%20Files%20(x86)/Programming%20Apps/ProjectileShooterGeorge_sVersion/assets/Guns/gunFire.gif" />
+         </image>
+      </ImageView>
+      <RadioButton fx:id="radioButtonAGGun" layoutX="186.0" layoutY="43.0" mnemonicParsing="false" />
+      <ImageView fitHeight="27.0" fitWidth="85.0" layoutX="135.0" layoutY="64.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="file:/M:/Program%20Files%20(x86)/Programming%20Apps/ProjectileShooterGeorge_sVersion/assets/Guns/gunAntiGravity.gif" />
+         </image>
+      </ImageView>
+      <Label layoutX="54.0" layoutY="26.0" text="Ice Gun" />
+      <Label layoutX="111.0" layoutY="26.0" text="Fire Gun" />
+      <Label layoutX="162.0" layoutY="26.0" text="Anti-Gravity" />
+      <RadioButton fx:id="radioButtonPortalGun" layoutX="253.0" layoutY="43.0" mnemonicParsing="false" />
+      <ImageView fitHeight="27.0" fitWidth="85.0" layoutX="202.0" layoutY="64.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="file:/M:/Program%20Files%20(x86)/Programming%20Apps/ProjectileShooterGeorge_sVersion/assets/Guns/gunPortalIn.gif" />
+         </image>
+      </ImageView>
+      <Label layoutX="229.0" layoutY="26.0" text="Portal Gun" />
+      <Button fx:id="buttonCloseAntiGravity" layoutX="562.0" layoutY="22.0" mnemonicParsing="false" onMouseClicked="#closeAntiGravity" prefHeight="25.0" prefWidth="122.0" text="Close Anti-Gravity" />
+      <Button fx:id="buttonClosePortals" layoutX="381.0" layoutY="22.0" mnemonicParsing="false" onMouseClicked="#closePortal" prefHeight="25.0" prefWidth="122.0" text="Close Portals" />
+   </children>
+</AnchorPane>
